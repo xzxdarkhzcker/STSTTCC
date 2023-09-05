@@ -18,8 +18,8 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"Request logged successfully")
 
 # Define the server's host and port.
-host = "localhost"  # Change to your server's address if needed
-port = 8080
+host = "https://sts-tt-cc.netlify.app"  # Change to your server's address if needed
+port = 80 or 433
 
 # Create an HTTP server with the custom request handler.
 server = HTTPServer((host, port), RequestHandler)
